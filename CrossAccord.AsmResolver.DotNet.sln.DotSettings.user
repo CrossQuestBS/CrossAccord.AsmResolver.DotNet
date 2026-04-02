@@ -1,9 +1,0 @@
-﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b74ad6f0_002Da643_002D4921_002D8452_002D01935a6d65d5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="InsertAfter" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;ProjectFile&gt;445BD928-C07A-4714-8EB9-6F305C5E93E2/d:CIL/f:CilInstructionCollectionExtensions_Tests.cs&lt;/ProjectFile&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e76552a9_002D918d_002D481a_002Daee4_002D6b8b78fd7ae6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="InsertAfter #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::445BD928-C07A-4714-8EB9-6F305C5E93E2::net10.0::CrossAccord.AsmResolver.DotNet.Tests.CIL.CILProcessor_Tests+InsertAfter&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
