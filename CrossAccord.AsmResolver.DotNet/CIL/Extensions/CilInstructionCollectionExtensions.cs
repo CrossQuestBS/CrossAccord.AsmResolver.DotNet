@@ -7,47 +7,47 @@ namespace CrossAccord.AsmResolver.DotNet.CIL.Extensions;
 
 public static class CilInstructionCollectionExtensions
 {
-    public static void InsertBefore(this CilInstructionCollection collection, CilInstruction target,
+    public static void InsertBefore(this CilInstructionCollection instructionCollection, CilInstruction target,
         CilInstruction instruction)
     {
-        var index = collection.IndexOf(target);
+        var index = instructionCollection.IndexOf(target);
 
         if (index == -1)
             throw new ArgumentOutOfRangeException(nameof(target));
 
-        collection.Insert(index, instruction);
+        instructionCollection.Insert(index, instruction);
     }
 
-    public static void InsertAfter(this CilInstructionCollection collection, CilInstruction target,
+    public static void InsertAfter(this CilInstructionCollection instructionCollection, CilInstruction target,
         CilInstruction instruction)
     {
-        var index = collection.IndexOf(target);
+        var index = instructionCollection.IndexOf(target);
 
         if (index == -1)
             throw new ArgumentOutOfRangeException(nameof(target));
 
-        collection.Insert(index + 1, instruction);
+        instructionCollection.Insert(index + 1, instruction);
     }
 
-    public static void InsertRangeAfter(this CilInstructionCollection collection, CilInstruction target,
+    public static void InsertRangeAfter(this CilInstructionCollection instructionCollection, CilInstruction target,
         IEnumerable<CilInstruction> instructions)
     {
-        var index = collection.IndexOf(target);
+        var index = instructionCollection.IndexOf(target);
 
         if (index == -1)
             throw new ArgumentOutOfRangeException(nameof(target));
 
-        collection.InsertRange(index + 1, instructions);
+        instructionCollection.InsertRange(index + 1, instructions);
     }
 
-    public static void InsertRangeBefore(this CilInstructionCollection collection, CilInstruction target,
+    public static void InsertRangeBefore(this CilInstructionCollection instructionCollection, CilInstruction target,
         IEnumerable<CilInstruction> instructions)
     {
-        var index = collection.IndexOf(target);
+        var index = instructionCollection.IndexOf(target);
 
         if (index == -1)
             throw new ArgumentOutOfRangeException(nameof(target));
 
-        collection.InsertRange(index, instructions);
+        instructionCollection.InsertRange(index, instructions);
     }
 }
