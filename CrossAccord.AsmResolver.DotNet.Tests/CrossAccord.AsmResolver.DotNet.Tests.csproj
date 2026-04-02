@@ -21,4 +21,9 @@
         <Using Include="NUnit.Framework"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CrossAccord.AsmResolver.DotNet.TestCases\CrossAccord.AsmResolver.DotNet.TestCases.csproj" />
+      <ProjectReference Include="..\CrossAccord.AsmResolver.DotNet\CrossAccord.AsmResolver.DotNet.csproj" />
+    </ItemGroup>
+
 </Project>
