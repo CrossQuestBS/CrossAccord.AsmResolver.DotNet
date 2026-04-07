@@ -1,5 +1,6 @@
 using AsmResolver;
 using AsmResolver.DotNet;
+using AsmResolver.DotNet.Cloning;
 using AsmResolver.DotNet.Code.Cil;
 using AsmResolver.PE.DotNet.Cil;
 using CrossAccord.AsmResolver.DotNet.CIL.Extensions;
@@ -21,7 +22,7 @@ public class CilInstructionCollectionExtensions_Tests
         var method = (MethodDefinition)exampleCaseDefinition
             .LookupMember(typeof(CILModificationTestCase)
                 .GetMethod(nameof(CILModificationTestCase.SimpleFunction))!.MetadataToken);
-
+        
         if (method.CilMethodBody is null)
         {
             Assert.Fail("CILModificationTestCase.SimpleFunction method body is null");
@@ -45,7 +46,6 @@ public class CilInstructionCollectionExtensions_Tests
             Assert.That(_methodBody_1.Instructions[1], Is.EqualTo(instruction));
         }
     }
-
 
     [TestFixture]
     public class InsertRangeAfter : CilInstructionCollectionExtensions_Tests
